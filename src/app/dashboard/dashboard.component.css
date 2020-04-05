@@ -1,0 +1,23 @@
+.card{
+  border-radius: 0px;
+  background-color: rgba(68, 70, 79, 0.2);
+  border: none;
+}
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+	border-top: 1px solid #3d404c;
+}
+
+.table>thead>tr>th {
+	border-bottom: none;
+  cursor: pointer;
+  user-select: none;
+}
+.sort-icon{color: orange}
+.table {
+   margin-bottom: 0px;
+}
