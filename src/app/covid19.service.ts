@@ -11,7 +11,7 @@ export class Covid19Service {
 
   getAllData = (): Observable<any> => {
     return this._http.get(`${this.ALL_URL}`).pipe(
-      map(res => res['countries_stat']["countries_stat"]),
+      map(res => res),
       catchError(err => {
         return throwError(err);
       })

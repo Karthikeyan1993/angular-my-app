@@ -18,7 +18,7 @@ export class AuthenticationInterceptorService implements HttpInterceptor {
     })
     return next.handle(req).pipe(map((event: HttpEvent<any>) => {
       if (event instanceof HttpResponse) {
-        console.log("response recived successfully--->>>", event.body)
+        console.log("response recived successfully");
       }
       return event;
     }), catchError((error: HttpErrorResponse) => {

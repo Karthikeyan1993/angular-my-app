@@ -18,3 +18,61 @@ body {
   background-color: #2f323b;
   color:#dce1e6;
 }
+.card{
+  border-radius: 0px;
+  background-color: rgba(68, 70, 79, 0.2);
+  border: none;
+}
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+	border-top: 1px solid #3d404c;
+}
+
+.table>thead>tr>th {
+	border-bottom: none;
+  cursor: pointer;
+  user-select: none;
+}
+.sort-icon{color: orange}
+.table {
+   margin-bottom: 0px;
+}
+
+::-webkit-scrollbar {
+	height: 30px;
+	overflow: visible;
+	width: 15px
+}
+
+::-webkit-scrollbar-button {
+	height: 0;
+	width: 0
+}
+
+::-webkit-scrollbar-corner {
+	background: 0 0
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #414550;
+	background-clip: padding-box;
+	border: solid transparent;
+	border-width: 5px;
+	min-height: 50%;
+	padding: 0;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+	box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+	color: rgba(255, 255, 255, .6);
+	border-radius: 10px
+}
+
+::-webkit-scrollbar-track {
+	background-clip: padding-box;
+	border: solid transparent;
+	border-width: 1px;
+	width: 10px
+}
