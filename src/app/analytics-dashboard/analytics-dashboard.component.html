@@ -1,3 +1,5 @@
+<app-ng-common-table [columnDef]=displayColumns [data]=data [height]=450>
+</app-ng-common-table>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12">
@@ -9,7 +11,7 @@
 							<thead>
 								<tr>
 									<th *ngFor="let col of displayColumns" (click)="doOrder(col.prop)">
-										<span>{{ col.displayName}}</span>
+										<span [innerHTML]="col.displayName"></span>
 										<span class="pl-2 fa sort-icon" [ngClass]="getClass(col.prop)"></span>
 									</th>
 								</tr>
