@@ -12,7 +12,7 @@ export class AnalyticsDashboardComponent implements OnInit {
   orderBy = "asc";
   constructor(private _service: Covid19Service) {
     this.displayColumns = [
-      { prop: 'country_name', displayName: 'Country Name' },
+      { prop: 'country_name', displayName: 'Country Name',width:20 },
       { prop: 'cases', displayName: 'Cases' },
       { prop: 'active_cases', displayName: 'Active Cases' },
       { prop: 'deaths', displayName: 'Deaths' },
